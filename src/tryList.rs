@@ -18,8 +18,17 @@ pub fn testList() {
     //empList3.remove(0); // // remove only the element from the list by their index.
     //empList3.clear();
     empList3.drain( 0..2).for_each(drop); // remove elements by index and range.
-
     empList3.retain(|&x| x != 3); // remove elements with value 3
+
+    let mut empList4 = Vec:: new();
+    empList4.extend(["hello", "moin", "hi", "hey"]); 
+    empList4.push("Hallo");
+    let mut empList5 = empList4.clone();
+    empList5.retain(|x| !x.contains ("llo"));
+    empList4.retain(|&o| !o.starts_with("h")); // remove elements by starting "h"
+    empList4.retain(|&x| !x.ends_with("o")); // remove elements by ending "o"
+    empList4.retain(|&y| !y.contains("ey"));
+    
 
     println!("list1 is {:?}", list1);
     println!("the index 0 of List1 is:{} ", list1[0]) ;
@@ -30,6 +39,8 @@ pub fn testList() {
     println!("empList empList2 is created and show it : {:?} "
     , empList2);
     println!("empList empList3 is created and show it : {:?} ", empList3);
+    println!("empList empList4 is created and show it : {:?} ", empList4);
+    println!("the empList cloened and removed element words with include llo {:?}", empList5);
 
 
 } 
