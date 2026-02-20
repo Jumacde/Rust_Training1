@@ -1,5 +1,5 @@
-mod testType;
+mod calcMethod;
 
 fn main( ) {
-    testType::testType();
+    calcMethod::testType();
 }
