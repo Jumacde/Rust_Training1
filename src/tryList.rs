@@ -2,15 +2,34 @@ pub fn testList() {
 
     let list1 : [i32; 2] = [2, 4];
     let list2 : [&str; 3] = ["hello", "world", "rust"];
-    let mut empList= Vec:: new();
+    
+    let mut empList1= Vec:: new();
     let num1 : i32 = 123;
-    empList.push(num1);
+    empList1.push(num1);
+    
+    let mut empList2= Vec:: new();
+    empList2.push("A");
+    empList2.extend(["B", "C"]);
+
+    let mut empList3= Vec:: new();
+    empList3.push(1);
+    empList3.extend([2, 3, 4, 5]);
+    //empList3.pop(); // remove only the element from the list by index -1.
+    //empList3.remove(0); // // remove only the element from the list by their index.
+    //empList3.clear();
+    empList3.drain( 0..2).for_each(drop); // remove elements by index and range.
+
+    empList3.retain(|&x| x != 3); // remove elements with value 3
+
     println!("list1 is {:?}", list1);
     println!("the index 0 of List1 is:{} ", list1[0]) ;
     println!("list2 is {:?}", list2);
     println!("the index 1 of List2 is:{} ", list2[1]) ;
-    print!("empList empList is added {} and show it : {:?} " ,num1
-    , empList);
+    println!("empList empList1 is added {} and show it : {:?} " ,num1
+    , empList1);
+    println!("empList empList2 is created and show it : {:?} "
+    , empList2);
+    println!("empList empList3 is created and show it : {:?} ", empList3);
 
 
 } 
