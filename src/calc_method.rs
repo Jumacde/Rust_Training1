@@ -41,3 +41,8 @@ pub fn add_method(x: i32, y: i32, z: i32) -> (i32, i32) {
 pub fn swap_method(a: i32, b:i32) ->(i32, i32){
     return(b, a);
 }
+
+// test to use calling and use return values on the file <<try_if_else.rs>>. 
+pub fn mul_meth(x: i32, y:i32) ->i32 {
+    return x * y;
+} 

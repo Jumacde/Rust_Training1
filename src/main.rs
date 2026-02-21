@@ -1,6 +1,8 @@
 mod calc_method;
 mod try_list;
 mod try_hashmap;
+mod try_if_else;
+mod try_loop;
 
 fn main( ) {
     println!("<< try calculations. >>");
@@ -19,4 +21,13 @@ fn main( ) {
     println!("<< try swap method.>>");
     let(a, b) = calc_method::swap_method(3, 6);
     println!("a = {}, b = {}", a, b);
+
+    println!("<< try if else>>");
+    try_if_else::test_if_else();
+    println!("<< try if else: calling and use return values of other methods.>>");
+    try_if_else::test_math();
+
+    println!("<< try loop>>");
+    try_loop::test_loop();
+
 }
