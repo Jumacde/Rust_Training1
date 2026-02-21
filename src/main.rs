@@ -32,6 +32,8 @@ fn main( ) {
 
     println!("<< try loop>>");
     try_loop::test_loop();
+    println!("<< try loop with break and return value>>");
+    try_loop::braak_loop();
 
     println!("<< try while>>");
     try_while::test_while();
