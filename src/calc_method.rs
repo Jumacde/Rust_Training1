@@ -22,8 +22,6 @@ pub fn test_type() {
     let fsub1 : f64 = o - m as f64; 
     let fsub2 : f64 = m as f64 - o; 
 
-    // try add
-
     println!("{} + {} = {}", a, b, sum1);
     println!("{} - {} = {}", x, y, sub1);
     println!("{} - ({}) = {}", i, j, sub2);
@@ -32,4 +30,8 @@ pub fn test_type() {
     println!("{} + {} = {}", m, a, fsum2);
     println!("{} - {} = {}", o, m, fsub1);
     println!("{} - ({}) = {}", m, o, fsub2);
+}
+
+pub fn add_method1(x: i32, y: i32, z: i32) -> (i32, i32) {
+    return (x + y, x * z); 
 }

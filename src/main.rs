@@ -1,6 +1,6 @@
 mod calc_method;
 mod try_list;
-mod try_hashMap;
+mod try_hashmap;
 
 fn main( ) {
     println!("<< try calculations. >>");
@@ -8,5 +8,12 @@ fn main( ) {
     println!("<< try Lists. >>");
     try_list::test_list();
     println!("<< try HashMap. >>");
-    try_hashMap:: test_hashmap();
+    try_hashmap:: test_hashmap();
+
+    println!("<< try add method.>>");
+    let add_result1 = calc_method::add_method1(30,102,8);
+    println!("{:?}", add_result1);
+    let (sum, mul) = calc_method::add_method1(30,102,8);
+    println!("{}, {}", sum, mul);
+
 }
