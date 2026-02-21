@@ -4,6 +4,7 @@ mod try_hashmap;
 mod try_if_else;
 mod try_loop;
 mod try_while;
+mod try_for;
 
 fn main( ) {
     println!("<< try calculations. >>");
@@ -33,4 +34,7 @@ fn main( ) {
 
     println!("<< try while>>");
     try_while::test_while();
+
+    println!("<< try for >>");
+    try_for::test_for();
 }
