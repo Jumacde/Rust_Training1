@@ -1,6 +1,6 @@
 use std::collections::HashMap;
 
-pub fn testHashmap() {
+pub fn test_hashmap() {
  let mut hashmap1 = HashMap::new();
  hashmap1.insert("Alice", 1001);
  hashmap1.insert("Bob", 1129);

@@ -1,4 +1,4 @@
-pub fn testList() {
+pub fn test_list() {
 
     let list1 : [i32; 2] = [2, 4];
     let list2 : [&str; 3] = ["hello", "world", "rust"];

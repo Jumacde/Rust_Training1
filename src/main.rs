@@ -1,12 +1,12 @@
-mod calcMethod;
-mod tryList;
-mod tryHashMap;
+mod calc_method;
+mod try_list;
+mod try_hashMap;
 
 fn main( ) {
     println!("<< try calculations. >>");
-    calcMethod::testType();
+    calc_method::test_type();
     println!("<< try Lists. >>");
-    tryList::testList();
+    try_list::test_list();
     println!("<< try HashMap. >>");
-    tryHashMap:: testHashmap();
+    try_hashMap:: test_hashmap();
 }

@@ -1,5 +1,5 @@
-pub fn testType() {
-    // 1. learn basic function-structure and variables types.
+pub fn test_type() {
+    // learn basic function-structure and variables types.
     let a : u8 = 26;
     let b : u8 = 15;
     let sum1: u8 = a + b;
@@ -21,6 +21,8 @@ pub fn testType() {
     let fsum2: f32 = m + a as f32;
     let fsub1 : f64 = o - m as f64; 
     let fsub2 : f64 = m as f64 - o; 
+
+    // try add
 
     println!("{} + {} = {}", a, b, sum1);
     println!("{} - {} = {}", x, y, sub1);
