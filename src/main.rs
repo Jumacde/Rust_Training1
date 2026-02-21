@@ -3,6 +3,7 @@ mod try_list;
 mod try_hashmap;
 mod try_if_else;
 mod try_loop;
+mod try_while;
 
 fn main( ) {
     println!("<< try calculations. >>");
@@ -30,4 +31,6 @@ fn main( ) {
     println!("<< try loop>>");
     try_loop::test_loop();
 
+    println!("<< try while>>");
+    try_while::test_while();
 }
