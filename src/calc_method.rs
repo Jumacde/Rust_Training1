@@ -1,3 +1,5 @@
+use std::ptr::read_unaligned;
+
 pub fn test_type() {
     // learn basic function-structure and variables types.
     let a : u8 = 26;
@@ -32,6 +34,10 @@ pub fn test_type() {
     println!("{} - ({}) = {}", m, o, fsub2);
 }
 
-pub fn add_method1(x: i32, y: i32, z: i32) -> (i32, i32) {
+pub fn add_method(x: i32, y: i32, z: i32) -> (i32, i32) {
     return (x + y, x * z); 
+}
+
+pub fn swap_method(a: i32, b:i32) ->(i32, i32){
+    return(b, a);
 }

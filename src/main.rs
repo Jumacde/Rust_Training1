@@ -11,9 +11,12 @@ fn main( ) {
     try_hashmap:: test_hashmap();
 
     println!("<< try add method.>>");
-    let add_result1 = calc_method::add_method1(30,102,8);
+    let add_result1 = calc_method::add_method(30,102,8);
     println!("{:?}", add_result1);
-    let (sum, mul) = calc_method::add_method1(30,102,8);
+    let (sum, mul) = calc_method::add_method(30,102,8);
     println!("{}, {}", sum, mul);
 
+    println!("<< try swap method.>>");
+    let(a, b) = calc_method::swap_method(3, 6);
+    println!("a = {}, b = {}", a, b);
 }
