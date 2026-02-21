@@ -5,6 +5,7 @@ mod try_if_else;
 mod try_loop;
 mod try_while;
 mod try_for;
+mod try_match;
 
 fn main( ) {
     println!("<< try calculations. >>");
@@ -37,4 +38,7 @@ fn main( ) {
 
     println!("<< try for >>");
     try_for::test_for();
+
+    println!("<< try match>>");
+    try_match::test_match();
 }
